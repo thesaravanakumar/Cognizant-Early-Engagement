@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Outlook Inverter Palace</title>
+    <script>
+  
+        function billCalculation() {
+            /* Fill  the Javascript code to calculate the bill amount */
+            var Luminous = document.getElementById("luminous").value;
+            var Microtek = document.getElementById("microtek").value;
+            var Exide = document.getElementById("exide").value;
+            var Livguard = document.getElementById("livguard").value;
+            var Vguard = document.getElementById("vguard").value;
+            var amount = (Luminous*4740)+(Microtek*4500)+(Exide*5050)+(Livguard*5600)+(Vguard*5400);
+            if(amount>5500)
+            {
+             var discount = (amount*15)/100;
+             amount=amount-discount;
+            }
+            amount=parseFloat(amount);
+            document.getElementById("result").innerHTML = "Hi, You have to pay Rs."+amount.toFixed(2)+". Thanks for selecting us!!!";
+            return false;
+        }
+    </script>
+    
+<style>
+::placeholder {
+	color:#5D6D7E;
+    opacity: 2;
+}
+        
+input[type="email"], input[type="tel"], input[type="number"], input[type="text"],input[type="date"], textarea, select {
+	width: 85%;
+	color: #342E53;
+	font-weight: bold;
+	background: transparent;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+input[type="submit"] {
+	background-color: #08088A;
+}
+label span {
+	color: #2E4053;
+}
+body {
+    background-color: #9ACD32;
+}
+h1 {
+    color: #FFFFFF;
+    font-family: Arial;
+    border-style: 1px solid;
+    border-radius: 6px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#FF8C00; 
+    text-align: center;
+}
+#result {
+    font-family:Calibri;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: auto;
+    margin-left: 15em;
+    color: #800000;
+}
+
+#submit {
+     font-weight: bold;
+     font-family: Times New Roman;
+     border-radius: 6px;
+     background: transparent;
+     margin-right: auto;
+     width: 13em;
+     height: 35px;
+     margin-left: 28em;
+}
+#reset {
+    font-weight: bold;
+     font-family: Times New Roman;
+     border-radius: 6px;
+     background: transparent;
+     margin-right: auto;
+     width: 13em;
+     height: 35px;
+     margin-left: 18em;
+}
+table {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	border-style: 3px groove;
+	border-spacing: 5px;
+	border-radius: 6px;
+	
+}
+#billing td {
+    border-width:2px;
+    border-style: solid;
+    border-color: #EC7063;
+    padding: 5px;
+	
+}
+.b {
+    width:50%;
+    margin-left: auto;
+    margin-right: 14em;
+}
+#brandName td {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-width: 2px;
+	border-style: solid;
+	border-spacing: 5px;
+	border-radius: 6px;
+}
+#submit:hover, #reset:hover {
+	background-color: #2E8B57;
+	color: #FFFFFF;
+}
+        
+    </style>
+</head>
+<body>
+
+<h1>Outlook Inverter Palace</h1>
+
+<form onsubmit="return billCalculation()">
+    <table id="billing">
+            <tr>
+				<th id="details" colspan="2"></th>
+			</tr>
+			<tr>
+				<td><label><span><b>Name*</b></span></label></td>
+				<td><input type="text" name="name" id="name" placeholder="Enter the name" pattern="[a-zA-z]+" required/></td>
+			</tr>
+			<tr>
+				<td><label><span><b>Contact No*</b></span></label></td>
+				<td><input type="text" name="contactNo" id="contactNo" placeholder="Enter the contact no" pattern="[7-9]{1}[0-9]{9}" required/></td>
+			</tr>
+			<tr>
+				<td><label><span><b>E-mail address</b></span></label></td>
+				<td><input type="email" name="Email" id="Email" placeholder="Example:abc@gmail.com" required/></td>
+			</tr>
+			<tr>
+				<td>
+					<!-- Fill the label for Brand Name -->
+					<label><span><b>Brand Name</b></span></label>
+				</td>
+				<td>
+					<table id="brandName">
+					<tr>
+						<td><label><span><b>Luminous</b></span></label></td>
+						<td><input type="number" name="luminous" id="luminous" min="0"  required/></td>
+					</tr>
+					<tr>
+						<td><label><span><b>Microtek</b></span></label></td>
+						<td><input type="number" name="microtek" id="microtek" min="0"  required/></td>
+					</tr>
+					<tr>
+						<td><label><span><b>Exide</b></span></label></td>
+						<td><input type="number" name="exide" id="exide" min="0"  required/></td>
+					</tr>
+					<tr>
+						<td><label><span><b>Livguard</b></span></label></td>
+						<td><input type="number" name="livguard" id="livguard" min="0"  required/></td>
+					</tr>
+					<tr>
+						<td><label><span><b>V-Guard</b></span></label></td>
+						<td><input type="number" name="vguard" id="vguard" min="0"  required/></td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><label><span><b>Date of Booking*</b></span></label></td>
+				<td><input required type="date" name="Date" id="Date" /></td>
+			</tr>
+            <tr>
+				<td><label><span><b>Address</b></span></label></td>
+				<td><textarea id="address" required rows="5" cols="25"  placeholder="Enter your address"></textarea></td>
+			</tr>
+	</table>
+	<table>
+		<tr>
+			<td><input type="submit" id="submit" value="Submit"/></td>
+			<td><input type="reset" id="reset" value="Clear" /></td>
+		</tr>
+	</table>	
+    <p class="b"><div class="b" id="result"></div>
+</form>
+</body>
+</html>

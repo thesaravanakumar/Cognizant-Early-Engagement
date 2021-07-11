@@ -1,0 +1,19 @@
+h1{
+   text-align:center;
+   color:#FF00FF;
+   font-style:italic;
+   font-weight:bold;
+ }
+ 
+ table{
+     text-align:left;
+     margin-left:35%;
+     border-spacing:10px;
+     border-width:10%;
+     border-style:solid;
+     background-color:#F899A4;
+ }
+ td{
+     border-style:ridge;
+     padding:10px;
+ }

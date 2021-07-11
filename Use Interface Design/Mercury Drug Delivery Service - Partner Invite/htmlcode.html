@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Mercury Drug Delivery Service</title>
+</head>
+<style>
+    input[type="file"] {
+    background: transparent;
+    width: 100%;
+    }
+    
+    
+    input[type="text"] {
+        background: transparent;
+    width: 100%;
+    }
+    
+    input[type="number"] {
+        background: transparent;
+    width: 100%;
+    }
+    
+    input[type="email"] {
+        background: transparent;
+        width: 100%;
+    }
+    
+    input[type="tel"] {
+        background: transparent;
+    width: 100%;
+    }
+    
+    input[type="url"] {
+        background: transparent;
+    width: 100%;
+    }
+    
+    
+    input[type="checkbox"] {
+        background: transparent;
+    
+    }
+    
+    input[type="button"] {
+        background: transparent;
+    }
+    
+    input[type="checkbox"]	/* Fill here */ :checked + a {
+    		/* Fill the attribute and value */
+    		}
+
+    body{
+       font-weight: bold;  
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    h3{
+       color: #FFFFFF;
+       background-color: #800000;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 60%;
+       font-family: Verdana;
+       padding: 3px;
+       border-radius: 6px;
+    }
+    
+    table{
+    width: 60%;
+    border-style:3px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    border-radius: 6px;
+    }
+    
+    td{
+    font-size: 15px;
+    }
+    
+    #submit{
+    color:#800000;
+    font-weight: bold;
+    background: transparent;
+    border-radius: 6px;
+    }
+    
+    #submit:hover {      
+        background-color:#800000 ;
+        color: #FFFFFF;
+    }	
+    
+    .a{
+        width: 50%;
+    }
+    
+    .b{
+       width: 60%;
+    }
+    
+    ::-webkit-input-placeholder { 
+        color: #dcdcdc;   
+    }
+    </style>
+<body>
+
+    <h3> Mercury Drug Delivery Service-Partner Invite </h3>
+    <table style="text-align: left;">
+
+        <tr>
+            <td colspan="2"><input type="text" required id="pharmacyName" placeholder="Pharmacy name*"></td>
+        </tr>
+        <tr>
+            <td class="a"><input type="number" id="pin" placeholder="Pin(PrimaryLocation)*" required></td>
+            <td><input type="text" id="city" placeholder="City*"></td>
+        </tr>
+        <tr>
+            <td class="a"><input type="text" id="oname" placeholder="Pharmacy owner*" required</td>
+            <td><input type="tel" id="phno" placeholder="Phone number*" pattern="[7-9]{1}[0-9]{9}" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="email" id="email" placeholder="Email*"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="url" id="link" placeholder="Website Link/ online listing link"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="noOfOutlets" min="1" placeholder="Number of outlets*" required></td>
+            <td class="a"><input type="text" id="primaryArea" placeholder="Primary Area of outlet*" required></td>
+        </tr>
+        <tr>
+            <td><input type="text" min="200" id="cost" placeholder="Minimum purchase cost*" required></td>
+            <td class="a"><input list="establishmentType" id="type" placeholder="Establishment : Independant/Chain*"
+                    required>
+                <datalist id="establishmentType">
+                    <option value="Independant"></option>
+                    <option value="Chain"></option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Medicines available :
+                <input type="checkbox" id="gsl" name="items">General Sales List Medicines(GSL)
+                <input type="checkbox" id="p" name="items">Pharmacy Medicines(P)<br>
+                <input type="checkbox" id="pom" name="items">Prescription Only Medicines (POM)
+                <input type="checkbox" id="cds" name="items">Controlled Drugs (CDs)
+            </td>
+        </tr>
+        <tr>
+            <td>Retail Drug License(Jpeg/PDF)*<br>
+                <input type="file" id="license"></td>
+            <td>GSTIN/PAN*<br>
+                <input type="file" id="pan"></td>
+        </tr>
+        <tr>
+            <td>FSSAI(Jpeg/PDF)*<br>
+                <input type="file" id="fssai"></td>
+            <td>Facade/Pharmacy-shelves/Refridgerator(Jpeg)* <br>
+                <input type="file" id="others" multiple></td>
+        </tr>
+    </table>
+
+    <p class="b"><input type="checkbox"><a href="#submit" id="terms_ref" style="color: blue;"><b>I agree to terms of
+                services</b></a></p>
+    <p class="b"><input type="button" id="submit" value="submit"></p>
+
+</body>
+
+</html>
