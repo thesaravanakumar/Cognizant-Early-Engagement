@@ -1,7 +1,7 @@
 # Cognizant-Early-Engagement
-Early Engagement is a learning portal offered by **Cognizant**, where you can learn basic concepts of Java, Sql ,Web Develepoment.
+Early Engagement is a learning portal offered by **Cognizant**, where you can learn basic concepts of Java, Sql, Web Develepoment.
 
-Fell free to contribute!🖤
+Feel free to contribute!🖤
 
 <details><summary><b>Contents:</b></summary>
   
