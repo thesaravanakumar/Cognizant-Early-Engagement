@@ -1,0 +1,4 @@
+DB_DRIVER_CLASS=com.mysql.jdbc.Driver
+DB_URL=jdbc:mysql://localhost:3306/testbase
+DB_USERNAME=ritam
+DB_PASSWORD=password
