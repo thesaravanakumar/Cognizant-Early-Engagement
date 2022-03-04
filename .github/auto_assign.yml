@@ -1,0 +1,11 @@
+addReviewers: true
+
+addAssignees: true
+
+reviewers: 
+  - thesaravanakumar
+
+skipKeywords:
+  - wip
+
+numberOfReviewers: 0
