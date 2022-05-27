@@ -3,6 +3,8 @@ Early Engagement is a learning portal offered by **Cognizant**, where you can le
 
 Feel free to contribute!🖤
 
+> I received a large number of emails inquiring about answers or inaccuracies. I may not have responded to someone, but if you require assistance or if a query goes unanswered, please open a new [issue](https://github.com/thesaravanakumar/Cognizant-Early-Engagement/issues) so that others can assist you. Thanks
+
 <details><summary><b>Contents:</b></summary>
   
 * [User Interface Design](#UserInterfaceDesign)
