@@ -23,7 +23,7 @@ Feel free to contribute!🖤
 - Update the `readme.md` file.
 - Commit your changes and make a pullrequest.
 
-<a href="http://makeapullrequest.com">
+<a href="https://github.com/thesaravanakumar/Cognizant-Early-Engagement/pulls">
   <img align="center"  src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"/>
 </a>
 
